@@ -2,62 +2,81 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="../stylee/main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recettes App</title>
-<link rel="stylesheet" href="/stylee/main.css">
 </head>
 <body>
 
-  <header class="header">
-    <div class="greeting">
-      <h1>Hello, <span>Mark</span> 👋</h1>
-      <p>Qu'est-ce qu'on cuisine aujourd'hui ?</p>
-    </div>
-    <div class="profile">
-      <img src="https://cdn-icons-png.flaticon.com/128/1999/1999625.png" alt="Profil">
-    </div>
-  </header>
+<div class="container">
 
-  
+  <div class="header">
+    <div>
+      <h2>Hello, Mark 👋</h2>
+      <p>What do you want to cook today?</p>
+    </div>
+    <img 
+      src="https://destination-nature-unique.fr/wp-content/uploads/2025/05/Les-tresors-caches-de-la-cuisine-regionale.jpg" 
+      class="avatar"
+      alt="Profile">
+  </div>
 
-  <div class="search-bar">
+  <div class="search-box">
     <input type="text" placeholder="Search by recipes">
   </div>
 
-  <div class="categories">
-    <button>DINNER</button>
-    <button>LUNCH</button>
-    <button>ALL</button>
-    <button class="active">BREAKFAST</button>
+  <div class="video-card">
+    <img 
+      src="https://destination-nature-unique.fr/wp-content/uploads/2025/05/Les-tresors-caches-de-la-cuisine-regionale.jpg" 
+      alt="Food video">
+    <div class="play-btn">▶</div>
   </div>
 
-  <section class="recipe-list">
-    <article class="recipe-card">
-      <img src="https://destination-nature-unique.fr/wp-content/uploads/2025/05/Les-tresors-caches-de-la-cuisine-regionale.jpg" alt="Pasta">
-      <div class="recipe-info">
-        <h2>Une richesse culinaire à explorer</h2>
-        <p>Mary Smith</p>
-        <span>15 min</span>
+  <div class="categories">
+    <button>Dinner</button>
+    <button>Lunch</button>
+    <button>All</button>
+    <button class="active">Breakfast</button>
+  </div>
+
+  <div class="reci pe-card">
+    <img 
+      src="https://destination-nature-unique.fr/wp-content/uploads/2025/05/Les-tresors-caches-de-la-cuisine-regionale.jpg" 
+      alt="Recipe">
+    <div class="recipe-info">
+      <p class="author">Mary Smith</p>
+      <h3>Une richesse culinaire à explorer</h3>
+      <div class="details">
+        <span>⏱ 15 min</span>
         <span>⭐ 4.8</span>
       </div>
-    </article>
+    </div>
+  </div>
 
-    <article class="recipe-card">
-      <img src="https://destination-nature-unique.fr/wp-content/uploads/2025/05/Les-tresors-caches-de-la-cuisine-regionale.jpg" alt="Pasta">
-      <div class="recipe-info">
-        <h2>Une richesse culinaire à explorer</h2>
-        <p>Mary Smith</p>
-        <span>15 min</span>
-        <span>⭐ 4.8</span>
-      </div>
-    </article>
-  </section>
+</div>
 
-  <nav class="bottom-nav">
-    <button class="active">Home</button>
-    <button>Date</button>
-    <button>Listes</button>
-    <button>Profil</button>
-  </nav>
+<div class="fixed bottom-0 w-full  bg-white flex justify-between items-center p-3 shadow-md">
+  <div class="nav-item active">
+    <img class="w-12" src="https://cdn-icons-png.flaticon.com/128/25/25694.png" alt="Home">
+    <span>Home</span>
+  </div>
+
+  <div class="nav-item flex flex-col items-center ">
+    <img class="w-12 h-12 mb-1" src="https://cdn-icons-png.flaticon.com/128/2886/2886665.png" alt="Date">
+    <span class="text-sm text-gray-700">Date</span>
+  </div>
+
+  <div class="nav-item flex flex-col items-center cursor-pointer">
+    <img class="w-12 h-12 mb-1" src="https://cdn-icons-png.flaticon.com/128/1950/1950630.png" alt="Listes">
+    <span class="text-sm text-gray-700">Listes</span>
+  </div>
+
+  <div class="nav-item flex flex-col items-center ">
+    <img class="w-12 h-12 mb-1" src="https://cdn-icons-png.flaticon.com/128/456/456212.png" alt="Profil">
+    <span class="text-sm text-gray-700">Profil</span>
+  </div>
+</div>
+
 </body>
 </html>

@@ -1,2 +1,73 @@
-@use 'variables';
-@use 'cards';
+@use "./variables.scss";
+// @use "cards";
+// @use "responsive";
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+.container {
+  padding: 20px;
+  padding-bottom: 90px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    color: variables.$green;
+  }
+
+  p {
+    font-size: 14px;
+    color: #777;
+  }
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.search-box {
+  margin: 20px 0;
+
+  input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: #eaeaea;
+    outline: none;
+  }
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    background: variables.$gray;
+
+    &.active {
+      background: variables.$green;
+      color: #fff;
+    }
+  }
+}
+
