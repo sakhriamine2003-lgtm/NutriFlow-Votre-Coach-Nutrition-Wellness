@@ -40,19 +40,33 @@
     <button class="active">Breakfast</button>
   </div>
 
-  <div class="reci pe-card">
-    <img 
-      src="https://destination-nature-unique.fr/wp-content/uploads/2025/05/Les-tresors-caches-de-la-cuisine-regionale.jpg" 
-      alt="Recipe">
-    <div class="recipe-info">
-      <p class="author">Mary Smith</p>
-      <h3>Une richesse culinaire à explorer</h3>
-      <div class="details">
-        <span>⏱ 15 min</span>
-        <span>⭐ 4.8</span>
+  <div id="home">
+
+    <h1 class="text-2xl font-bold mb-5">Recipes</h1>
+
+    <div class="reci cursor-pointer bg-white rounded-2xl shadow-md overflow-hidden mb-5 hover:shadow-lg transition">
+
+      <img 
+        src="https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg"
+        class="w-full h-48 object-cover"
+      />
+
+      <div class="p-4">
+        <p class="text-sm text-gray-500">By Chef Mario</p>
+        <h3 class="font-bold text-lg mt-1">Delicious Pasta</h3>
+
+        <div class="flex justify-between text-sm text-gray-600 mt-2">
+          <span>15 min</span>
+          <span>500 Kcal</span>
+        </div>
       </div>
+
     </div>
+
   </div>
+
+
+  <div id="detail"></div>
 
 </div>
 
@@ -78,5 +92,9 @@
   </div>
 </div>
 
+
+
+
+<script src="../style/ui/render.js"></script>
 </body>
 </html>
