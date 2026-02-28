@@ -1,11 +1,18 @@
-// recipeProvider.js
+const BASE_URL = "https://dummyjson.com/recipes";
 
 export async function obtenirToutesLesRecettes() {
-  const res = await fetch("https://dummyjson.com/recipes");
-  return res.json();
-}
+  try {
+    const res = await fetch(BASE_URL);
 
-export async function rechercherDesRecettes(q) {
-  const res = await fetch(`https://dummyjson.com/recipes/search?q=${q}`);
-  return res.json();
+    if (!res.ok) {
+      throw new Error("Erreur lors du fetch des recettes");
+    }
+
+    const data = await res.json();
+    return data.recipes;
+
+  } catch (error) {
+    console.error("API Error:", error);
+    return [];
+  }
 }

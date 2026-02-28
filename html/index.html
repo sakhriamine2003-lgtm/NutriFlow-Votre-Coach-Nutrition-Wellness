@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Recipe App</title>
+
   <link rel="stylesheet" href="../stylee/main.css">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body >
 
 <div class="container">
 <div id="home">
@@ -17,20 +19,19 @@
       <p>What do you want to cook today?</p>
     </div>
     <img 
-      src="https://destination-nature-unique.fr/wp-content/uploads/2025/05/Les-tresors-caches-de-la-cuisine-regionale.jpg" 
+      src="https://cdn-icons-png.flaticon.com/128/6932/6932488.png" 
       class="avatar"
       alt="Profile">
   </div>
 
   <div class="search-box">
-    <input type="text" placeholder="Search by recipes">
+    <input id="searchInput" type="text" placeholder="Search by recipes">
   </div>
 
   <div class="video-card">
     <img 
       src="https://destination-nature-unique.fr/wp-content/uploads/2025/05/Les-tresors-caches-de-la-cuisine-regionale.jpg" 
       alt="Food video">
-    <!-- <div id="plat" class="flex justify-center items-center  ">▶</div> -->
   </div>
 
   <div class="categories">
@@ -40,44 +41,25 @@
     <button class="active">Breakfast</button>
   </div>
 
-  
+  <h1 class="text-2xl font-bold mb-5">Recipes</h1>
 
-    <h1 class="text-2xl font-bold mb-5">Recipes</h1>
+  <div id="loader" class="hidden">Loading...</div>
 
-    <div id="plat"> </div>
+  <div id="plat"></div>
  
-    <!-- <div id="plat" class="reci cursor-pointer bg-white rounded-2xl shadow-md overflow-hidden mb-5 hover:shadow-lg transition">
+</div>
 
-       <img 
-        src="https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg"
-        class="w-full h-48 object-cover"
-      />
-
-      <div class="p-4">
-        <p class="text-sm text-gray-500">By Chef Mario</p>
-        <h3 class="font-bold text-lg mt-1">Delicious Pasta</h3>
-
-        <div class="flex justify-between text-sm text-gray-600 mt-2">
-          <span>15 min</span>
-          <span>500 Kcal</span>
-        </div>
-      </div> 
-    </div> -->
-    
-  </div>
-
-
-  <div id="detail"></div>
+<div id="detail"></div>
 
 </div>
 
-<div class="fixed bottom-0 w-full  bg-white flex justify-between items-center p-3 shadow-md">
+<div class="fixed bottom-0 w-full bg-white flex justify-between items-center p-3 shadow-md">
   <div class="nav-item active">
     <img class="w-12" src="https://cdn-icons-png.flaticon.com/128/25/25694.png" alt="Home">
     <span>Home</span>
   </div>
 
-  <div class="nav-item flex flex-col items-center ">
+  <div class="nav-item flex flex-col items-center">
     <img class="w-12 h-12 mb-1" src="https://cdn-icons-png.flaticon.com/128/2886/2886665.png" alt="Date">
     <span class="text-sm text-gray-700">Date</span>
   </div>
@@ -87,15 +69,13 @@
     <span class="text-sm text-gray-700">Listes</span>
   </div>
 
-  <div class="nav-item flex flex-col items-center ">
+  <div class="nav-item flex flex-col items-center">
     <img class="w-12 h-12 mb-1" src="https://cdn-icons-png.flaticon.com/128/456/456212.png" alt="Profil">
     <span class="text-sm text-gray-700">Profil</span>
   </div>
 </div>
 
+<script type="module" src="../style/main/main.js"></script>
 
-
-
-<script type="module" src="../style/main.js"></script>
 </body>
 </html>
