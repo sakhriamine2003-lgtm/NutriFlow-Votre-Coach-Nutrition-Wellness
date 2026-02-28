@@ -4,7 +4,7 @@ export async function obtenirToutesLesRecettes() {
   try {
     const res = await fetch(BASE_URL);
 
-    if (!res.ok) {
+    if (!res) {
       throw new Error("Erreur lors du fetch des recettes");
     }
 
